@@ -8,14 +8,21 @@ public class Main {
         kiekviena iteracija iki dabar (2024)
          */
 
-        // Nesupratau salygos del cilko ir iteraciju
-        int gimimoMetai = 2007;
+        int gimimoMetai = 2004;
         int dabartiniaiMetai = 2024;
         System.out.println("Gimimo metai: " + gimimoMetai);
         if (dabartiniaiMetai - gimimoMetai < 18){
             System.out.println("Jaunesnis, " + (dabartiniaiMetai - gimimoMetai) + " metu amziaus.");
         } else {
             System.out.println("Vyresnis, " + (dabartiniaiMetai - gimimoMetai) + " metu amziaus.");
+        }
+        System.out.println();
+        for(int i = gimimoMetai; i <= dabartiniaiMetai; i++){
+            if (i - gimimoMetai < 18){
+                System.out.println(i + " metai. Jaunesnis, " + (i - gimimoMetai) + " metu amziaus.");
+            } else {
+                System.out.println(i + " metai. Vyresnis, " + (i - gimimoMetai) + " metu amziaus.");
+            }
         }
         System.out.println();
 
